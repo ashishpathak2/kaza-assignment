@@ -26,7 +26,7 @@ const User = sequelize.define("User", {
 sequelize.sync().then(() => console.log("Database synced"));
 
 //Function for token generation
-const generateToken = (userId) => jwt.sign({ id: userId }, "your_secret_key", { expiresIn: "1h" });
+const generateToken = (userId) => jwt.sign({ id: userId }, "sadas123e11safdassad12lfas", { expiresIn: "1h" });
 
 //User signup route 
 app.post("/signup", async (req, res) => {
